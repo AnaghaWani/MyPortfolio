@@ -1,0 +1,195 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', sans-serif; */
+  }
+  
+  .left_area h3{
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 900;
+  }
+  
+  .sidebar {
+    background: #111418;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left;
+  }
+  
+  .sidebar .profile_image{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-top: 30px;
+  }
+  
+  .sidebar h4{
+    color: #ccc;
+    margin-top: 20px;
+    font-weight: 50px;
+    font-size: 30px;
+  }
+  
+  .sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 65px;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+    font-size: 20px;
+    font-weight: 20px;
+  }
+  
+  .sidebar a:hover{
+    background: #20c997;
+  }
+  
+  .sidebar i{
+    padding-right: 10px;
+  }
+
+  #check:checked ~ .sidebar{
+    left: -190px;
+  }
+  
+  #check:checked ~ .sidebar a span{
+    display: none;
+  }
+  
+  #check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+  }
+  
+  .content{
+    /* margin-left: 250px; */
+    background: url(background.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.5s;
+  }
+  
+  
+  #check:checked ~ .content{
+    margin-left: 60px;
+  }
+  
+  #check{
+    display: none;
+  }
+  .background{
+    margin-left: 300px;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+  }
+  .home{
+    background: url(../images/HomePage.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.5s;
+
+  }
+
+  .aboutme{
+    background-color: #F8F9FA;
+  }
+  .mywork{
+    background-color:#E9E8E8;
+  }
+  .resume{
+    background-color: #F8F9FA;
+  }
+  .htext{
+    color: #fff;
+    font-weight:bold;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 240px;
+  }
+  .hlow{
+    padding-top: 30px;
+    font-size: 60px;
+    font-weight: 900;
+  }
+  .hbase{
+    font-size: 20px;
+    padding-top: 35px;
+    font-weight: lighter;
+  }
+
+  .btn-outline-secondary {
+    --bs-btn-color: #fff;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-color: #20c997;
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-focus-shadow-rgb: 108,117,125;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: transparent;
+    --bs-btn-active-border-color: #fff;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #fff;
+    --bs-gradient: none;
+}
+.btn{
+    --bs-btn-font-family: 'Ubuntu', sans-serif;
+    --bs-btn-font-size: 1rem;
+    --bs-btn-font-weight: 900;
+    --bs-btn-border-radius: 50%;
+    --bs-btn-border-width: 2px;
+}
+.socials{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: flex-end;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.heading h2{
+  color: #dee3e4;
+  font-size: 8rem;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+.heading p{
+  color: #111418;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-size: 2.25rem;
+  padding: 0%;
+  text-decoration: underline;
+  text-decoration-color: #20c997;    
+}
+.box{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
